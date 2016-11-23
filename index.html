@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tilt Hover Effects | Codrops</title>
+		<meta name="description" content="Some ideas for hover effects with a fancy tilt effect" />
+		<meta name="keywords" content="tilt, hover, effect, demo, inspiration, animation, template" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Abril+Fatface" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/pater.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+		<script>
+			document.documentElement.className = 'js';
+		</script>
+	</head>
+	<body class="loading">
+		<svg class="hidden">
+			<defs>
+				<symbol id="icon-arrow" viewBox="0 0 24 24">
+					<title>arrow</title>
+					<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+				</symbol>
+				<symbol id="icon-drop" viewBox="0 0 24 24">
+					<title>drop</title>
+					<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z" />
+					<path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
+				</symbol>
+			</defs>
+		</svg>
+		<main>
+			<section class="content content--c1">
+				<div class="pater">
+					<svg class="pater__svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 280 800" data-path-hover="M 0,0 280,0 280,800 0,800 Z">
+						<clipPath id="pater-clip">
+							<path d="M 0,0 280,0 0,400 0,800 Z" overflow="visible"/>
+						</clipPath>
+						<g class="pater__clip" clip-path="url(#pater-clip)">
+							<image overflow="visible" width="100%" height="100%" preserveAspectRatio="xMinYMin slice" xlink:href="img/sponsor/bg.jpg"></image>
+						</g>
+					</svg>
+					<div class="pater__content">
+						<img class="pater__logo" src="img/sponsor/jupiter_logo.svg" alt="Jupiter Logo" />
+						<span class="pater__title">The go-to WordPress theme for many U.S. based agencies</span>
+						<span class="pater__more">Hover for more</span>
+						<div class="pater__hover">
+							<div>Limitless Web Design Experience</div>
+							<div>Powering 50000+ High-end Business Websites</div>
+							<div>Build a Website. NO Limit. NO Code.</div>
+							<a class="pater__link" href="https://goo.gl/OJz2Dy" rel="nofollow">Find out more</a>
+						</div>
+					</div>
+				</div>
+				<a href="https://goo.gl/OJz2Dy" class="pater-mobile" rel="nofollow">
+					<img class="pater__logo" src="img/sponsor/jupiter_logo.svg" alt="Jupiter Logo" />
+					<span class="pater__title">Build a Website. NO Limit. NO Code.</span>
+				</a>
+				<header class="codrops-header">
+					<a href="https://github.com/codrops/TiltHoverEffects/" class="github-corner">
+						<svg width="80" height="80" viewBox="0 0 250 250" class="github-icon">
+							<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+							<path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" class="octo-arm"></path>
+							<path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+						</svg>
+					</a>
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Development/SurfReport/" title="Previous Demo">
+							<svg class="icon icon--arrow">
+								<use xlink:href="#icon-arrow"></use>
+							</svg>
+						</a>
+						<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=28860" title="Back to the article">
+							<svg class="icon icon--drop">
+								<use xlink:href="#icon-drop"></use>
+							</svg>
+						</a>
+					</div>
+					<h1 class="codrops-header__title">Tilt Hover Effects</h1>
+					<p class="codrops-header__tagline">Ornamental hovers inspired by the grid on <a href="http://www.kikk.be/2015/">Kikk 2015</a></p>
+				</header>
+				<a href="#" class="tilter tilter--1">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/1.jpg" alt="img01" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Tanya Bondesta</h3>
+							<p class="tilter__description">Toronto</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+				<a href="#" class="tilter tilter--1">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/2.jpg" alt="img02" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Walter Anderson</h3>
+							<p class="tilter__description">Stockholm</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+			</section>
+			<section class="content content--c2">
+				<a href="#" class="tilter tilter--2">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/3.jpg" alt="img03" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Helen Portland</h3>
+							<p class="tilter__description">Seattle</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+				<a href="#" class="tilter tilter--2">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/4.jpg" alt="img04" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Kara Greene</h3>
+							<p class="tilter__description">New York</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+			</section>
+			<section class="content content--c3">
+				<a href="#" class="tilter tilter--3">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/5.jpg" alt="img05" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Frank Hausman</h3>
+							<p class="tilter__description">Paris</p>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" class="tilter tilter--3">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/6.jpg" alt="img06" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Peter Dreifuss</h3>
+							<p class="tilter__description">Berlin</p>
+						</figcaption>
+					</figure>
+				</a>
+			</section>
+			<section class="content content--c4">
+				<a href="#" class="tilter tilter--4">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/7.jpg" alt="img07" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Chritie Lehmann</h3>
+							<p class="tilter__description">Miami</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+				<a href="#" class="tilter tilter--4">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/8.jpg" alt="img08" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Charles Wang</h3>
+							<p class="tilter__description">Hong Kong</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+			</section>
+			<section class="content content--c5">
+				<a href="#" class="tilter tilter--5">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/9.jpg" alt="img09" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Gary Freeman</h3>
+							<p class="tilter__description">London</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+				<a href="#" class="tilter tilter--5">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/10.jpg" alt="img10" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Andrea Torchini</h3>
+							<p class="tilter__description">Rome</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+			</section>
+			<section class="content content--c6">
+				<a href="#" class="tilter tilter--6">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/11.jpg" alt="img11" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Ben Wade</h3>
+							<p class="tilter__description">Dublin</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+				<a href="#" class="tilter tilter--6">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/12.jpg" alt="img12" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Sam Yu</h3>
+							<p class="tilter__description">Milan</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+			</section>
+			<section class="content content--c7">
+				<a href="#" class="tilter tilter--7">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/13.jpg" alt="img13" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Wilma Rex</h3>
+							<p class="tilter__description">Amsterdam</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+				<a href="#" class="tilter tilter--7">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/14.jpg" alt="img14" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Jenny Bird</h3>
+							<p class="tilter__description">Porto</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+			</section>
+			<section class="content content--c8">
+				<a href="#" class="tilter tilter--8">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/15.jpg" alt="img15" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Tanya Bondesta</h3>
+							<p class="tilter__description">Toronto</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+				<a href="#" class="tilter tilter--8">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/2.jpg" alt="img02" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Walter Anderson</h3>
+							<p class="tilter__description">Stockholm</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+			</section>
+			<!-- Related demos -->
+			<section class="content content--related">
+				<p>If you enjoyed this demo you might also like:</p>
+				<a class="media-item" href="http://tympanus.net/Development/HoverEffectIdeas/index.html">
+					<img class="media-item__img" src="img/related/1.jpg">
+					<h3 class="media-item__title">Hover Effect Ideas</h3>
+				</a>
+				<a class="media-item" href="http://tympanus.net/Development/ImageTiltEffect/">
+					<img class="media-item__img" src="img/related/2.jpg">
+					<h3 class="media-item__title">Image Tilt Effect</h3>
+				</a>
+				<a class="media-item" href="http://tympanus.net/Development/MediaPopUpEffect/">
+					<img class="media-item__img" src="img/related/3.jpg">
+					<h3 class="media-item__title">Media Pop Up Effect</h3>
+				</a>
+				<a class="media-item" href="http://tympanus.net/Development/SegmentEffect/">
+					<img class="media-item__img" src="img/related/4.jpg">
+					<h3 class="media-item__title">Segment Effect</h3>
+				</a>
+			</section>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			var tiltSettings = [
+			{},
+			{
+				movement: {
+					imgWrapper : {
+						translation : {x: 10, y: 10, z: 30},
+						rotation : {x: 0, y: -10, z: 0},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					},
+					lines : {
+						translation : {x: 10, y: 10, z: [0,70]},
+						rotation : {x: 0, y: 0, z: -2},
+						reverseAnimation : {duration : 2000, easing : 'easeOutExpo'}
+					},
+					caption : {
+						rotation : {x: 0, y: 0, z: 2},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					},
+					overlay : {
+						translation : {x: 10, y: -10, z: 0},
+						rotation : {x: 0, y: 0, z: 2},
+						reverseAnimation : {duration : 2000, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 100, y: 100, z: 0},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						rotation : {x: -5, y: 10, z: 0},
+						reverseAnimation : {duration : 900, easing : 'easeOutCubic'}
+					},
+					caption : {
+						translation : {x: 30, y: 30, z: [0,40]},
+						rotation : {x: [0,15], y: 0, z: 0},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					},
+					overlay : {
+						translation : {x: 10, y: 10, z: [0,20]},
+						reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 100, y: 100, z: 0},
+						reverseAnimation : {duration : 900, easing : 'easeOutCubic'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						rotation : {x: -5, y: 10, z: 0},
+						reverseAnimation : {duration : 50, easing : 'easeOutQuad'}
+					},
+					caption : {
+						translation : {x: 20, y: 20, z: 0},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					},
+					overlay : {
+						translation : {x: 5, y: -5, z: 0},
+						rotation : {x: 0, y: 0, z: 6},
+						reverseAnimation : {duration : 1000, easing : 'easeOutQuad'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 50, easing : 'easeOutQuad'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						translation : {x: 0, y: -8, z: 0},
+						rotation : {x: 3, y: 3, z: 0},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					},
+					lines : {
+						translation : {x: 15, y: 15, z: [0,15]},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					},
+					overlay : {
+						translation : {x: 0, y: 8, z: 0},
+						reverseAnimation : {duration : 600, easing : 'easeOutExpo'}
+					},
+					caption : {
+						translation : {x: 10, y: -15, z: 0},
+						reverseAnimation : {duration : 900, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					}
+				}
+			},
+			{
+				movement: {
+					lines : {
+						translation : {x: -5, y: 5, z: 0},
+						reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+					},
+					caption : {
+						translation : {x: 15, y: 15, z: 0},
+						rotation : {x: 0, y: 0, z: 3},
+						reverseAnimation : {duration : 1500, easing : 'easeOutElastic', elasticity : 700}
+					},
+					overlay : {
+						translation : {x: 15, y: -15, z: 0},
+						reverseAnimation : {duration : 500,easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 500, easing : 'easeOutExpo'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						translation : {x: 5, y: 5, z: 0},
+						reverseAnimation : {duration : 800, easing : 'easeOutQuart'}
+					},
+					caption : {
+						translation : {x: 10, y: 10, z: [0,50]},
+						reverseAnimation : {duration : 1000, easing : 'easeOutQuart'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 800, easing : 'easeOutQuart'}
+					}
+				}
+			},
+			{
+				movement: {
+					lines : {
+						translation : {x: 40, y: 40, z: 0},
+						reverseAnimation : {duration : 1500, easing : 'easeOutElastic'}
+					},
+					caption : {
+						translation : {x: 20, y: 20, z: 0},
+						rotation : {x: 0, y: 0, z: -5},
+						reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+					},
+					overlay : {
+						translation : {x: -30, y: -30, z: 0},
+						rotation : {x: 0, y: 0, z: 3},
+						reverseAnimation : {duration : 750, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 100, y: 100, z: 0},
+						reverseAnimation : {duration : 750, easing : 'easeOutExpo'}
+					}
+				}
+			}];
+
+			function init() {
+				var idx = 0;
+				[].slice.call(document.querySelectorAll('a.tilter')).forEach(function(el, pos) { 
+					idx = pos%2 === 0 ? idx+1 : idx;
+					new TiltFx(el, tiltSettings[idx-1]);
+				});
+			}
+
+			// Preload all images.
+			imagesLoaded(document.querySelector('main'), function() {
+				document.body.classList.remove('loading');
+				init();
+			});
+
+			// REMOVE THIS!
+			// For Demo purposes only. Prevent the click event.
+			[].slice.call(document.querySelectorAll('a[href="#"]')).forEach(function(el) {
+				el.addEventListener('click', function(ev) { ev.preventDefault(); });
+			});
+
+			var pater = document.querySelector('.pater'),
+				paterSVG = pater.querySelector('.pater__svg'),
+				pathEl = paterSVG.querySelector('path'),
+				paths = {default: pathEl.getAttribute('d'), active: paterSVG.getAttribute('data-path-hover')};
+
+			pater.addEventListener('mouseenter', function() {
+				anime.remove(pathEl);
+				anime({
+					targets: pathEl,
+					d: paths.active,
+					duration: 400,
+					easing: 'easeOutQuad'
+				});
+			});
+
+			pater.addEventListener('mouseleave', function() {
+				anime.remove(pathEl);
+				anime({
+					targets: pathEl,
+					d: p

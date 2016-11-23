@@ -1,0 +1,251 @@
+.tilter {
+	display: block;
+	position: relative;
+	width: 300px;
+	height: 415px;
+	margin: 1.5em 2.5em;
+	color: #fff;
+	flex: none;
+	perspective: 1000px;
+}
+
+.tilter * {
+	pointer-events: none;
+}
+
+.tilter:hover,
+.tilter:focus {
+	color: #fff;
+	outline: none;
+}
+
+/*
+.tilter__figure,
+.tilter__deco,
+.tilter__caption {
+	will-change: transform;
+}*/
+
+.tilter__figure,
+.tilter__image {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.tilter__figure > * {
+	transform: translateZ(0px); /* Force correct stacking order */
+}
+
+.tilter__figure {
+	position: relative;
+}
+
+.tilter__figure::before {
+	content: '';
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	top: 5%;
+	left: 5%;
+	box-shadow: 0 30px 20px rgba(35,32,39,0.5);
+}
+
+.tilter__deco {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.tilter__deco--overlay {
+	background-image: linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
+}
+
+.tilter__deco--shine div {
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	top: -50%;
+	left: -50%;
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
+}
+
+.tilter__deco--lines {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 1.5px;
+}
+
+.tilter__caption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 4em;
+}
+
+.tilter__title {
+	margin: 0;
+	font-weight: normal;
+	font-size: 2.5em;
+	font-family: 'Abril Fatface', serif;
+	line-height: 1;
+}
+
+.tilter__description {
+	margin: 1em 0 0 0;
+	font-size: 0.85em;
+	letter-spacing: 0.15em;
+}
+
+/* Individual styles */
+
+/* Example 1 (Default) */
+.tilter--1 .tilter__figure::before {
+	box-shadow: 0 30px 20px rgba(0,0,0,0.5);
+}
+
+/* Example 2 (thicker lines, overlay) */
+.tilter--2,
+.tilter--2:hover,
+.tilter--2:focus {
+	color: #2e27ad;
+}
+
+.tilter--2 .tilter__deco--overlay {
+	background-image: linear-gradient(45deg, rgba(245, 239, 40, 0.6), rgba(164, 22, 169, 0.6));
+}
+
+.tilter--2 .tilter__deco--lines {
+	stroke: #2e27ad;
+	stroke-width: 4px;
+}
+
+/* Example 3 (no lines, overlay hard-light) */
+.tilter--3 .tilter__deco--overlay {
+	background-image: linear-gradient(45deg, rgba(205, 81, 220, 0.6), rgba(41, 94, 230,0.5));
+}
+
+.tilter--3 .tilter__caption {
+	padding: 2em;
+	text-align: right;
+	text-shadow: 0.1em 0.8em 1em rgba(0,0,0,0.35);
+}
+
+/* Example 4 (caption sliding in) */
+.tilter--4 .tilter__deco--overlay {
+	background-image: linear-gradient(20deg, rgb(214, 100, 40), rgba(46, 39, 173, 0.58), rgba(53, 74, 165, 0.6));
+}
+
+@media screen and (min-width: 30em) {
+	.tilter--4 .tilter__deco--lines {
+		transform: scale3d(0.8,0.8,1);
+		transition: transform 0.4s;
+	}
+	.tilter--4:hover .tilter__deco--lines {
+		transform: scale3d(1,1,1);
+	}
+	.tilter--4 .tilter__title,
+	.tilter--4 .tilter__description {
+		transform: translate3d(0,80px,0);
+		opacity: 0;
+		transition: transform 0.4s, opacity 0.4s;
+	}
+	.tilter--4:hover .tilter__description {
+		transition-delay: 0.1s;
+	}
+	.tilter--4:hover .tilter__title,
+	.tilter--4:hover .tilter__description {
+		transform: translate3d(0,0,0);
+		opacity: 1;
+	}
+}
+
+/* Example 5 (line animating) */
+.tilter--5 .tilter__deco--lines path {
+	stroke-dasharray: 1270;
+	stroke-dashoffset: 1270;
+	transition: stroke-dashoffset 0.7s;
+}
+
+.tilter--5:hover .tilter__deco--lines path {
+	stroke-dashoffset: 0;
+}
+
+.tilter--5 .tilter__figure::before {
+	box-shadow: none;
+}
+
+/* Example 6 (different line position) */
+.tilter--6,
+.tilter--6:hover,
+.tilter--6:focus {
+	color: #2e27ad;
+}
+
+.tilter--6 .tilter__deco--overlay {
+	background-image: linear-gradient(45deg, rgba(46, 39, 173, 0.2), rgba(255, 186, 59, 0.58));
+}
+
+.tilter--6 .tilter__deco--lines {
+	stroke: #2e27ad;
+	stroke-width: 6px;
+	top: -50px;
+	left: -50px;
+}
+
+.tilter--6 .tilter__caption {
+	padding: 0 4em 5.5em 1em;
+}
+
+.tilter--6 .tilter__figure::before {
+	box-shadow: none;
+}
+
+/* Example 7 (different line) */
+.tilter--7 .tilter__deco--overlay {
+	background-image: linear-gradient(45deg, rgba(93, 203, 106, 0.48), rgba(59, 239, 255, 0.58));
+}
+
+.tilter--7 .tilter__deco--lines {
+	stroke-width: 20px;
+	transform: scale3d(0.9,0.9,1);
+	opacity: 0;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.tilter--7:hover .tilter__deco--lines {
+	opacity: 1;
+	transform: scale3d(1,1,1);
+}
+
+.tilter--7 .tilter__figure::before {
+	box-shadow: none;
+}
+
+/* Example 8 (different line) */
+.tilter--8 {
+	perspective: none;
+}
+
+.tilter--8 .tilter__figure {
+	transform-style: flat;
+}
+
+.tilter--8 .tilter__deco--lines {
+	stroke: #9255ae;
+	stroke-width: 6px;
+	mix-blend-mode: color-burn;
+}
+
+.tilter--8 .tilter__caption {
+	color: #9255ae;
+	mix-blend-mode: color-burn;
+}
+
+.tilter--8 .tilter__figure::before {
+	box-shadow: none;
+}

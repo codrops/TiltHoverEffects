@@ -1,0 +1,178 @@
+.pater {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 280px;
+	text-align: center;
+	display: flex;
+	color: #fff;
+	font-family: 'Avenir Next', Arial, sans-serif;
+	font-style: italic;
+	font-weight: 600;
+	padding: 0 1.5em;
+	pointer-events: none;
+	z-index: 1000;
+}
+
+.loading .pater {
+	display: none;
+}
+
+.pater-mobile::after,
+.pater::after {
+	content: 'Sponsored by';
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1em;
+	font-size: 0.75em;
+	color: #33284a;
+}
+
+.pater:hover {
+	pointer-events: auto;
+}
+
+.pater__svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.pater__clip {
+	pointer-events: auto;
+}
+
+.pater__content {
+	position: relative;
+	z-index: 10;
+}
+
+.pater span {
+	display: block;
+	position: relative;
+}
+
+.pater__title,
+.pater__more {
+	text-align: left;
+	width: 100%;
+	max-width: 163px;
+	transition: opacity 0.3s;
+}
+
+.pater:hover .pater__title,
+.pater:hover .pater__more {
+	opacity: 0;
+}
+
+.pater__more {
+	text-decoration: underline;
+	font-size: 0.85em;
+	padding: 1em 0 0;
+}
+
+.pater__logo {
+	max-width: 60%;
+	display: block;
+	margin: 2.5em auto 1em;
+	transform: translate3d(-38px,0,0);
+	transition: transform 0.3s;
+}
+
+.pater:hover .pater__logo {
+	transform: translate3d(0,0,0);
+}
+
+.pater__hover {
+	opacity: 0;
+	pointer-events: none;
+	transform: translate3d(-100px,0,0);
+}
+
+.pater__hover div:first-child {
+	font-size: 1.5em;
+	font-weight: normal;
+	padding-bottom: 2em;
+	margin-bottom: 1.25em;
+	background: url(../img/sponsor/deco.png) no-repeat 50% 100%;
+}
+
+.pater__hover div:nth-child(3) {
+	font-size: 0.75em;
+	padding-top: 100px;
+	margin-top: 4em;
+	background: url(../img/sponsor/deco2.svg) no-repeat 50% 0%;
+}
+
+.pater:hover .pater__hover {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translate3d(0,0,0);
+	transition: opacity 0.3s, transform 0.3s;
+	transition-delay: 0.3s;
+}
+
+.pater__link {
+	background: #fff;
+	color: #33284a;
+	padding: 0.85em 1.5em;
+	margin: 0 auto;
+	display: block;
+	max-width: 180px;
+	margin-top: 2em;
+	transition: color 0.2s, background 0.2s;
+}
+
+.pater__link:hover {
+	color: #fff;
+	background: #33284a;
+	cursor: pointer;
+}
+
+.pater-mobile {
+	position: fixed;
+	background: url(../img/sponsor/bg.jpg) no-repeat 50% 50%;
+	background-size: 100% auto;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 1.75em 0em 0.5em 1em;
+	z-index: 10000;
+	display: none;
+	align-items: center;
+}
+
+.pater-mobile::after {
+	font-size: 0.65em;
+	font-weight: bold;
+}
+
+.pater-mobile .pater__logo {
+	width: 30%;
+	max-width: 150px;
+	margin: 0;
+	transform: none;
+	flex: none;
+}
+
+.pater-mobile .pater__title {
+	display: block;
+	color: #fff;
+	font-size: 0.76em;
+	padding: 0 0 0 3vw;
+	max-width: none;
+}
+
+@media screen and (max-width: 55.625em) {
+	.pater {
+		display: none;
+	}
+	.pater-mobile {
+		display: flex;
+	}
+}

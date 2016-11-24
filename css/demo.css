@@ -13,6 +13,7 @@ a {
 	outline: none;
 	color: #694f9b;
 	text-decoration: none;
+	transition: color 0.2s;
 }
 
 a:hover, a:focus {
@@ -117,6 +118,22 @@ a:hover, a:focus {
 .codrops-header__tagline {
 	margin: 0;
 	padding: 0 1em;
+}
+
+.codrops-demos {
+	margin: 1em 0 0;
+}
+
+.codrops-demos a {
+	border-bottom: 1px solid;
+	display: inline-block;
+	padding: 0.2em 0;
+	transition: border-color 0.2s, color 0.2s;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a:focus {
+	border-color: transparent;
 }
 
 /* Top Navigation Style */

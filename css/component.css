@@ -38,6 +38,14 @@
 	transform: translateZ(0px); /* Force correct stacking order */
 }
 
+.smooth .tilter__figure,
+.smooth .tilter__deco--overlay,
+.smooth .tilter__deco--lines,
+.smooth .tilter__deco--shine div,
+.smooth .tilter__caption {
+	transition: transform 0.2s ease-out;
+}
+
 .tilter__figure {
 	position: relative;
 }

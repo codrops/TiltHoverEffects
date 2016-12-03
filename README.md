@@ -1,6 +1,6 @@
 # Tilt Hover Effects
 
-Some ideas for hover effects with a fancy tilt effect. Inspired by the effect seen on [Kikk 2015](http://www.kikk.be/2015/).
+Some ideas for hover effects with a fancy tilt effect. Inspired by the effect seen on [Kikk 2015](http://www.kikk.be/2015/) made by [Dogstudio](http://www.dogstudio.be/).
 
 [Article on Codrops](http://tympanus.net/codrops/?p=28860)
 

@@ -14,7 +14,7 @@ Read more here: [License](http://tympanus.net/codrops/licensing/)
 
 ## Credits
 
-- [Anime.js](anime-js.com) by Julian Garnier
+- [Anime.js](http://anime-js.com) by Julian Garnier
 - [imagesLoaded](http://imagesloaded.desandro.com/) by David DeSandro
 
 ## Misc
